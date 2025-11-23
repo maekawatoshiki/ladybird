@@ -226,6 +226,9 @@ if (ENABLE_FUZZERS)
     add_subdirectory(Fuzzers)
 endif()
 
+# Small standalone examples
+add_subdirectory(Examples)
+
 # No utilities or tests in these configs
 if (ENABLE_FUZZERS OR ENABLE_COMPILER_EXPLORER_BUILD OR ANDROID OR IOS)
     return()
